@@ -1,0 +1,36 @@
+<form class="test">
+    <label for="">Username</label>
+    <input type="text" placeholder="Username" id="username" class="username" required><br>
+
+    <label for="">Password</label>
+    <input type="password" placeholder="Password" id="password" class="password" required><input type="checkbox" onclick="togglePasswordVisibility()">
+    <label>Show Password:</label><br>
+
+    <label for="">Gender</label>
+    <input type="radio" name="male" id="">Male
+    <input type="radio" name="male" id="">Female<br>
+
+    <label for="">Country</label>
+    <select name="country" id="country">
+        <option value="ind">India</option>
+        <option value="ind">Australia</option>
+        <option value="ind">Europe</option>
+        <option value="ind">Nepal</option>
+    </select><br>
+
+    <label for="">Message</label>
+    <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message..."></textarea><br>
+
+    <button type="submit" value="submit">Submit</button>
+
+</form>
+
+<script>
+    function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("password");
+
+        // Toggle between password and text type
+        passwordInput.type = (passwordInput.type === "password") ? "text" : "password";
+    }
+</script>
+
